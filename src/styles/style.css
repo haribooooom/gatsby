@@ -334,12 +334,6 @@ svg {
 /* フッター */
 .footer {
   position: relative;
-/*  padding-top: 60px;*/
-/*  padding-bottom: 60px;*/
-/*  color: #fff;*/
-/*  background-image: none;*/
-/*  background-size: cover;*/
-/*  background-color: #477294;*/
 }
 
 .footer .back{
@@ -352,9 +346,8 @@ svg {
 }
 
 .footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .footer .site {
