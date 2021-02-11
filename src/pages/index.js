@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default ({data}) =>(
+export default ( { data } ) =>(
   <div>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -27,7 +27,7 @@ export default ({data}) =>(
         </header>
         <section className="hero">
           <figure>
-            <Img fluid={data.hero.childImageSharp.fluid} alt="" />
+            <Img fluid={data.hero.childImageSharp.fluid} alt="" style={{ height: "100%" }}/>
           </figure>
           <div className="catch">
             <h1>There is no love sincerer than<br /> the love of food.</h1>
