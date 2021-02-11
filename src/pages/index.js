@@ -27,7 +27,7 @@ export default ({data}) =>(
         </header>
         <section className="hero">
           <figure>
-            <Img fluid={data.file.childImageSharp.fluid} alt="" />
+            <Img fluid={data.hero.childImageSharp.fluid} alt="" />
           </figure>
           <div className="catch">
             <h1>There is no love sincerer than<br /> the love of food.</h1>
@@ -109,7 +109,7 @@ export default ({data}) =>(
 
 export const query = graphql`
 query {
-  file(relativePath: {eq: "hero.jpg"}) {
+  hero:file(relativePath: {eq: "hero.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 1600) {
 ...GatsbyImageSharpFluid
