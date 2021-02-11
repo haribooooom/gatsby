@@ -116,5 +116,33 @@ query {
       }
     }
   }
+  fruit:file(relativePath: {eq: "fruit.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 320) {
+...GatsbyImageSharpFluid
+      }
+    }
+  }
+  grain:file(relativePath: {eq: "grain.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 320) {
+...GatsbyImageSharpFluid
+      }
+    }
+  }
+  beverage:file(relativePath: {eq: "beverage.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 320) {
+...GatsbyImageSharpFluid
+      }
+    }
+  }
+  berry:file(relativePath: {eq: "berry.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 1600) {
+...GatsbyImageSharpFluid
+      }
+    }
+  }
 }
 `
