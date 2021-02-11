@@ -103,6 +103,9 @@ export default ( { data } ) =>(
               </li>
             </ul>
           </div>
+  <div className="back">
+  <Img fluid={data.pattern.childImageSharp.fluid} alt="" style={{ height: "100%" }}/>
+  </div>
         </footer>
       </div>
 )
@@ -140,6 +143,13 @@ query {
   berry:file(relativePath: {eq: "berry.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 1600) {
+...GatsbyImageSharpFluid
+      }
+    }
+  }
+  pattern:file(relativePath: {eq: "pattern.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 1920) {
 ...GatsbyImageSharpFluid
       }
     }
