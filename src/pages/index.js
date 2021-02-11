@@ -27,7 +27,6 @@ export default ({data}) =>(
         </header>
         <section className="hero">
           <figure>
-//            <img src="/images/hero.jpg" alt="" />
             <Img fluid={data.file.childImageSharp.fluid} alt="" />
           </figure>
           <div className="catch">
