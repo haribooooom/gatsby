@@ -7,7 +7,7 @@ export default () =>(
         <title>ESSENTIALS</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossOrigin="anonymous" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="images/icon.png" type="image/png" />
+        <link rel="icon" href="image/icon.ico" type="image/png" />
         <header className="header">
           <div className="container">
             <div className="site">
