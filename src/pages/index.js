@@ -43,7 +43,7 @@ export default ({data}) =>(
             <div className="details">
               <div className="detail">
                 <figure>
-                  <img src="images/fruit.jpg" alt="" />
+                <Img fluid={data.fruit.childImageSharp.fluid} alt="" />
                 </figure>
                 <h3>フルーツ</h3>
                 <p>FRUIT</p>
@@ -51,7 +51,7 @@ export default ({data}) =>(
               </div>
               <div className="detail">
                 <figure>
-                  <img src="images/grain.jpg" alt="" />
+                  <Img fluid={data.grain.childImageSharp.fluid} alt="" />
                 </figure>
                 <h3>穀物</h3>
                 <p>GRAIN</p>
@@ -59,7 +59,7 @@ export default ({data}) =>(
               </div>
               <div className="detail">
                 <figure>
-                  <img src="images/beverage.jpg" alt="" />
+                  <Img fluid={data.beverage.childImageSharp.fluid} alt="" />
                 </figure>
                 <h3>飲み物</h3>
                 <p>BEVERAGE</p>
@@ -71,7 +71,7 @@ export default ({data}) =>(
         <section className="photo">
           <h2 className="sr-only">Photo</h2>
           <figure>
-            <img src="images/berry.jpg" alt="赤く熟したベリー" />
+            <Img fluid={data.berry.childImageSharp.fluid} alt="" />
           </figure>
         </section>
         <footer className="footer">
