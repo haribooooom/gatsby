@@ -121,21 +121,21 @@ query {
   }
   fruit:file(relativePath: {eq: "fruit.jpg"}) {
     childImageSharp {
-     fixed(width: 200) {
+     fixed(width: 320) {
 ...GatsbyImageSharpFixed_withWebp
       }
     }
   }
   grain:file(relativePath: {eq: "grain.jpg"}) {
     childImageSharp {
-      fixed(width: 200) {
+      fixed(width: 320) {
 ...GatsbyImageSharpFixed_withWebp
       }
     }
   }
   beverage:file(relativePath: {eq: "beverage.jpg"}) {
     childImageSharp {
-      fixed(width: 200) {
+      fixed(width: 320) {
 ...GatsbyImageSharpFixed_withWebp
       }
     }
@@ -150,7 +150,7 @@ query {
   pattern:file(relativePath: {eq: "pattern.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 1920, quality: 90) {
-...GatsbyImageSharpFluid
+...GatsbyImageSharpFluid_withWebp
       }
     }
   }
