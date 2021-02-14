@@ -1,10 +1,5 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
+  /* Your site config here */
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -14,6 +9,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images/`,
       },
-        },
-      ],
+    },
+    `gatsby-plugin-react-helmet` //追加
+  ],
 }
