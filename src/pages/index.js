@@ -122,28 +122,28 @@ query {
   fruit:file(relativePath: {eq: "fruit.jpg"}) {
     childImageSharp {
      fixed(width: 200) {
-...GatsbyImageSharpFixed
+...GatsbyImageSharpFixed_withWebp
       }
     }
   }
   grain:file(relativePath: {eq: "grain.jpg"}) {
     childImageSharp {
       fixed(width: 200) {
-...GatsbyImageSharpFixed
+...GatsbyImageSharpFixed_withWebp
       }
     }
   }
   beverage:file(relativePath: {eq: "beverage.jpg"}) {
     childImageSharp {
       fixed(width: 200) {
-...GatsbyImageSharpFixed
+...GatsbyImageSharpFixed_withWebp
       }
     }
   }
   berry:file(relativePath: {eq: "berry.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 1600) {
-...GatsbyImageSharpFluid
+...GatsbyImageSharpFluid_withWebp
       }
     }
   }
