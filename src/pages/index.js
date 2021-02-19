@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import Header from "../components/header"
+
 export default ( { data } ) =>(
   <div>
         <meta charSet="UTF-8" />
