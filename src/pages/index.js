@@ -12,7 +12,7 @@ export default ( { data } ) =>(
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossOrigin="anonymous" />
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="image/icon.ico" type="image/png" />
-
+<Header />
         <section className="hero">
           <figure>
             <Img fluid={data.hero.childImageSharp.fluid} alt="" style={{ height: "100%" }}/>
